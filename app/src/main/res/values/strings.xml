@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HW2_moran19</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="you_have_selected_the">You have selected the:</string>
+    <string name="nothing">Nothing</string>
+    <string name="sun">Sun</string>
+    <string name="dollar">Dollar</string>
+    <string name="pool">Pool</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="orange">Orange</string>
+    <string name="golf_ball">Golf Ball</string>
+    <string name="nada">Nada</string>
+    <string name="you_have_chosen_the">You have chosen the:</string>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.moran19.hw2_moran19.MainActivity"
+    android:id="@+id/mainLayout">
+
+    <com.example.moran19.hw2_moran19.MySurfaceView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/surface_View"
+        android:background="#00ffffff"/>
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/RedSeekBar"
+        android:max="255"
+        android:longClickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="89dp" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenSeekBar"
+        android:layout_alignTop="@+id/RedSeekBar"
+        android:layout_toRightOf="@+id/RedSeekBar"
+        android:layout_toEndOf="@+id/RedSeekBar"
+        android:max="255" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueSeekBar"
+        android:layout_alignBottom="@+id/greenSeekBar"
+        android:layout_toRightOf="@+id/greenSeekBar"
+        android:layout_toEndOf="@+id/greenSeekBar"
+        android:max="255"
+        android:longClickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/red"
+        android:id="@+id/redTextView"
+        android:layout_below="@+id/greenSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/greenSeekBar"
+        android:layout_toStartOf="@+id/greenSeekBar"
+        android:textColor="#ff0000"
+        android:textAlignment="center"
+        android:textSize="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Green"
+        android:layout_below="@+id/greenSeekBar"
+        android:layout_toRightOf="@+id/redTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/greenSeekBar"
+        android:layout_alignEnd="@+id/greenSeekBar"
+        android:id="@+id/greenTextView"
+        android:textColor="#00ff0d"
+        android:textSize="70dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Blue"
+        android:id="@+id/blueTextView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/blueSeekBar"
+        android:layout_alignStart="@+id/blueSeekBar"
+        android:layout_below="@+id/blueSeekBar"
+        android:layout_alignRight="@+id/blueSeekBar"
+        android:layout_alignEnd="@+id/blueSeekBar"
+        android:textColor="#0026ff"
+        android:textSize="70dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/you_have_chosen_the"
+        android:id="@+id/youSelected"
+        android:layout_alignTop="@+id/blueSeekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/blueTextView"
+        android:layout_toRightOf="@+id/blueSeekBar"
+        android:layout_toEndOf="@+id/blueSeekBar"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nada"
+        android:id="@+id/EW"
+        android:layout_below="@+id/youSelected"
+        android:layout_toRightOf="@+id/blueTextView"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/youSelected"
+        android:layout_alignEnd="@+id/youSelected" />
+
+</RelativeLayout>
